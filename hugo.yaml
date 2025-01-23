@@ -1,4 +1,51 @@
-baseURL: https://example.org/
+baseURL: https://ImAciidz.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: aciidz's blog
 theme: ["PaperMod"]
+
+#params:
+#  homeInfoParams:
+#    Title: Hi there wave
+#    Content: Can be Info, links, about...
+#
+#  socialIcons: # optional
+#    - name: "<platform>"
+#      url: "<link>"
+#    - name: "<platform 2>"
+#      url: "<link2>"
+
+# profile-mode
+params:
+  profileMode:
+    enabled: true
+    title: "Hey, I'm aciidz." # optional default will be site title
+    subtitle: "Former L4D speedrunner learning C and reverse engineering in my free time."
+    imageUrl: "https://i.imgur.com/MrfYzc9.jpeg" # optional
+    imageTitle: "Me at SGDQ 2022" # optional
+    imageWidth: 360 # custom size
+    imageHeight: 360 # custom size
+    buttons:
+      - name: About
+        url: "/about"
+      - name: Posts
+        url: "/posts"
+      - name: GitHub
+        url: "https://github.com/"
+
+  socialIcons: # optional
+    - name: "Discord"
+      url: "https://discord.gg/YFfK6Yyda2"
+    - name: "YouTube"
+      url: "https://youtube.com/@aciidz"
+    - name: "Twitch"
+      url: "https://twitch.tv/aciidzSR"
+    - name: "Steam"
+      url: "https://steamcommunity.com/profiles/76561198054276000"
+    - name: "Speedrun.com"
+      url: "https://speedrun.com/aciidz"
+    - name: "Twitter"
+      url: "https://x.com/aciidzSR"
+    - name: "GitHub"
+      url: "https://github.com/ImAciidz"
+    - name: "Linktree"
+      url: "https://linktr.ee/aciidzsr"
