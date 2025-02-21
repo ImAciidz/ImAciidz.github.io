@@ -18,7 +18,7 @@ theme: ["PaperMod"]
 params:
   profileMode:
     enabled: true
-    title: "Hey, I'm aciidz." # optional default will be site title
+    title: "Hi! I'm aciidz. 👋" # optional default will be site title
     subtitle: "Former L4D speedrunner learning C and reverse engineering in my free time."
     imageUrl: "https://i.imgur.com/MrfYzc9.jpeg" # optional
     imageTitle: "Me at SGDQ 2022" # optional
