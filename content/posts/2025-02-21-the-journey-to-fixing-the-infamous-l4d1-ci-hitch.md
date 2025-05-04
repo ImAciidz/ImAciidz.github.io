@@ -119,13 +119,13 @@ The Mac binaries tend to have a lot of stuff inlined, so it can sometimes be har
 
 Additionally, the Linux dedicated server binaries are just that: dedicated server binaries. This means you aren't going to be able to find any functions that aren't needed for dedicated server usage, or functions might be implemented differently to account for this. Client (and other) binaries don't have a dedicated server counterpart for what should be obvious reasons. In the cases where these restrictions are problematic, you have to rely on the Mac binaries instead.
 
-Unfortunately, for reasons unbeknownst to me, when I ran BinDiff on Mac binaries, it listed a significant amount of functions having changes, and/or it was blatantly mismatching functions (I could tell this was happening because the given function names were obviously not matching). However, this was not an issue for the Linux DS binaries - the diffs for those generally looked very similar, if not the same as the diff for the Windows binaries.
+Unfortunately, for reasons unbeknownst to me, when I ran BinDiff on Mac binaries, it listed a significant amount of functions as having changes, and/or it was blatantly mismatching functions (I could tell this was happening because the given function names were obviously not matching). However, this was not an issue for the Linux DS binaries - the diffs for those generally looked very similar, if not the same as the diff for the Windows binaries.
 
 For this reason, I also occasionally referenced the 2014 build of Portal 2 that mistakenly shipped with PDBs, which was helpful for reversing and labeling functions in the smaller binaries that don't tend to change a whole lot between engine branches/games (such as `datacache`).
 
 I learned a few months later that there's some [really handy scripts](https://github.com/Scags/IDA-Scripts) for IDA that automatically match functions between binaries based on their usage of strings, as well as being able to match entire vtables across binaries, so that's really neat.
 
-Also, small note - the Linux dedicated server depot includes `_srv` counterparts for matchmaking, server, as well as the `matchmaking_ds`/`matchmaking_ds_srv` binaries themselves, in addition to the `_srv` binaries already available in the main L4D2 Linux client depot.
+Also, small note - the Linux dedicated server depot includes `_srv` counterparts for `matchmaking`, `server`, as well as the `matchmaking_ds`/`matchmaking_ds_srv` binaries themselves, in addition to the `_srv` binaries already available in the main L4D2 Linux client depot.
 
 ### Initial discoveries
 
